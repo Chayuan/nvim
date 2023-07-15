@@ -1,0 +1,17 @@
+require("gwenael.plugins-setup")
+require("gwenael.core.options")
+require("gwenael.core.keymaps")
+require("gwenael.core.colorscheme")
+require("gwenael.plugins.comment")
+require("gwenael.plugins.nvim-tree")
+require("gwenael.plugins.lualine")
+require("gwenael.plugins.telescope")
+require("gwenael.plugins.nvim-cmp")
+
+require("gwenael.plugins.lsp.mason")
+require("gwenael.plugins.lsp.lspconfig")
+require("gwenael.plugins.lsp.null-ls")
+
+require("gwenael.plugins.autopairs")
+require("gwenael.plugins.treesitter")
+require("gwenael.plugins.gitsigns")

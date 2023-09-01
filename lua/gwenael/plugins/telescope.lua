@@ -14,10 +14,6 @@ end
 telescope.setup({
 	-- configure custom mappings
 	defaults = {
-		file_ignore_patterns = {
-			"node_modules/*",
-			"ios/*",
-		},
 		mappings = {
 			i = {
 				["<C-k>"] = actions.move_selection_previous, -- move to prev result

@@ -17,7 +17,7 @@ keymap.set("n", "<leader>e", ":NvimTreeFocus<CR>")
 
 -- telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>")
-keymap.set("n", "<leader>fw", "<cmd>Telescope live_grep<cr>")
+keymap.set("n", "<leader>fk", "<cmd>Telescope live_grep<cr>")
 keymap.set("n", "<leader>kc", "<cmd>Telescope grep_string<cr>")
 keymap.set("n", "<leader>kb", "<cmd>Telescope buffers<cr>")
 keymap.set("n", "<leader>kh", "<cmd>Telescope help_tags<cr>")

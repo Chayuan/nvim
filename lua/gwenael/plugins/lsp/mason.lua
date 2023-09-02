@@ -18,10 +18,7 @@ mason_lspconfig.setup({
 		"html",
 		"cssls",
 		"tailwindcss",
-	},
+    "rust_analyzer",
+  },
 })
 
--- remove protected call for mason_null_ls as it doesn't seems to be working well
-require("mason-null-ls").setup({
-	ensure_installed = { "prettier", "stylua", "eslint_d" },
-})

@@ -40,10 +40,9 @@ return packer.startup(function(use)
 	use("szw/vim-maximizer") -- maximizes and restores current window
 
 	-- essential plugins
-	use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
 	use("inkarkat/vim-ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
 
-	-- commenting with gc
+	-- Block commenting with gc
 	use("numToStr/Comment.nvim")
 
 	-- file explorer
@@ -67,7 +66,6 @@ return packer.startup(function(use)
 	-- snippets
 	use("L3MON4D3/LuaSnip") -- snippet engine
 	use("saadparwaiz1/cmp_luasnip") -- for autocompletion
-	use("rafamadriz/friendly-snippets") -- useful snippets
 
 	-- managing & installing lsp servers, linters & formatters
 	use("williamboman/mason.nvim") -- in charge of managing lsp servers, linters & formatters

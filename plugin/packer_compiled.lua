@@ -104,11 +104,6 @@ _G.packer_plugins = {
     path = "/Users/gwenaelrobert/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["friendly-snippets"] = {
-    loaded = true,
-    path = "/Users/gwenaelrobert/.local/share/nvim/site/pack/packer/start/friendly-snippets",
-    url = "https://github.com/rafamadriz/friendly-snippets"
-  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/Users/gwenaelrobert/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
@@ -226,11 +221,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/gwenaelrobert/.local/share/nvim/site/pack/packer/start/vim-nightfly-guicolors",
     url = "https://github.com/bluz71/vim-nightfly-guicolors"
-  },
-  ["vim-surround"] = {
-    loaded = true,
-    path = "/Users/gwenaelrobert/.local/share/nvim/site/pack/packer/start/vim-surround",
-    url = "https://github.com/tpope/vim-surround"
   },
   ["vim-tmux-navigator"] = {
     loaded = true,

@@ -8,7 +8,7 @@ keymap.set("n", "<leader>nh", ":nohl<CR>")
 
 keymap.set("n", "x", '"_x')
 
-keymap.set("n", "<leader>kh", "<C-w>v")
+-- keymap.set("n", "<leader>kh", "<C-w>v")
 keymap.set("n", "<leader>w", ":close<CR>")
 
 -- nvim-tree
@@ -20,7 +20,10 @@ keymap.set("n", "<leader>ko", "<cmd>Telescope find_files<cr>")
 keymap.set("n", "<leader>kf", "<cmd>Telescope live_grep<cr>")
 keymap.set("n", "<leader>kc", "<cmd>Telescope grep_string<cr>")
 keymap.set("n", "<leader>kb", "<cmd>Telescope buffers<cr>")
-keymap.set("n", "<leader>kh", "<cmd>Telescope help_tags<cr>")
+
+-- harpoon
+keymap.set("n", "<leader>ha", "<cmd>lua require(\"harpoon.mark\").add_file()<cr>")
+keymap.set("n", "<leader>hh", "<cmd>lua require(\"harpoon.ui\").toggle_quick_menu()<cr>")
 
 -- split windws
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically

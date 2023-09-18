@@ -81,6 +81,9 @@ return packer.startup(function(use)
 
   -- formatting
   use("nvimdev/guard.nvim")
+  
+  -- Harpoon
+  use("ThePrimeagen/harpoon")
 
 	-- treesitter configuration
 	use({

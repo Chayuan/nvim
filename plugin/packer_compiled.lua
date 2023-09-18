@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/Users/gwenaelrobert/.local/share/nvim/site/pack/packer/start/guard.nvim",
     url = "https://github.com/nvimdev/guard.nvim"
   },
+  harpoon = {
+    loaded = true,
+    path = "/Users/gwenaelrobert/.local/share/nvim/site/pack/packer/start/harpoon",
+    url = "https://github.com/ThePrimeagen/harpoon"
+  },
   ["lspkind.nvim"] = {
     loaded = true,
     path = "/Users/gwenaelrobert/.local/share/nvim/site/pack/packer/start/lspkind.nvim",

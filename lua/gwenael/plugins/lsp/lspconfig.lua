@@ -16,22 +16,17 @@ if not typescript_setup then
 	return
 end
 
-local lspsaga_setup, lspsaga = pcall(require, "lspsaga")
-if not lspsaga_setup then
-	return
-end
-
 local keymap = vim.keymap
-
-lspsaga.setup({})
 
 -- enable keybinds for available lsp server
 local on_attach = function(client, bufnr)
 	-- keybind options
 	local opts = { noremap = true, silent = true, buffer = bufnr }
 
-  -- keymap.set("n", "gd", "<cmd>Lspsaga finder<CR>")
-  keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+  vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float)
+  keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
+  keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
+  keymap.set('n', 'K', vim.lsp.buf.hover, opts)
 	keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
 	keymap.set("n", "gr", require('telescope.builtin').lsp_references, opts)
 	keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)

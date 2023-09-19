@@ -7,7 +7,7 @@ if not setup then
 end
 
 ft('typescript,javascript,typescriptreact'):fmt('prettier')
-ft('css,scss,svelte'):fmt('prettier')
+ft('css,scss,svelte,html'):fmt('prettier')
 ft('rust'):fmt('rustfmt')
 
 

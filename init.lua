@@ -12,5 +12,6 @@ require("gwenael.plugins.lsp.mason")
 require("gwenael.plugins.lsp.lspconfig")
 require("gwenael.plugins.lsp.guard")
 
+require("gwenael.plugins.autopairs")
 require("gwenael.plugins.treesitter")
 require("gwenael.plugins.gitsigns")

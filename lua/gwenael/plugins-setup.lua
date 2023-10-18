@@ -39,15 +39,7 @@ return packer.startup(function(use)
 
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 
-	use("szw/vim-maximizer") -- maximizes and restores current window
-
-	-- essential plugins
-	use("inkarkat/vim-ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
-
-	-- Block commenting with gc
-	use("numToStr/Comment.nvim")
-
-	-- file explorer
+		-- file explorer
 	use("nvim-tree/nvim-tree.lua")
 
 	-- vs-code like icons
@@ -65,6 +57,7 @@ return packer.startup(function(use)
 	use("hrsh7th/cmp-buffer") -- source for text in buffer
 	use("hrsh7th/cmp-path") -- source for file system paths
 
+   
 	-- snippets
 	use("L3MON4D3/LuaSnip") -- snippet engine
 	use("saadparwaiz1/cmp_luasnip") -- for autocompletion
@@ -78,12 +71,6 @@ return packer.startup(function(use)
 	use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
 	use("nvimdev/lspsaga.nvim")
 
-	use("jose-elias-alvarez/typescript.nvim") -- additional functionality for typescript server (e.g. rename file & update imports)
-	use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
-
-  -- formatting
-  use("nvimdev/guard.nvim")
-  
   -- Harpoon
   use("ThePrimeagen/harpoon")
 
@@ -102,7 +89,10 @@ return packer.startup(function(use)
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
-  -- nvim-surround
+  -- Astro support
+  use('wuelnerdotexe/vim-astro')
+
+   -- nvim-surround
   use({
    "kylechui/nvim-surround",
     tag = "*", -- Use for stability; omit to use `main` branch for the latest features

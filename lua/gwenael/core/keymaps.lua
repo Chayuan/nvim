@@ -14,16 +14,7 @@ keymap.set("n", "<leader>w", ":close<CR>")
 -- nvim-tree
 keymap.set("n", "<leader>b", ":NvimTreeToggle<CR>")
 keymap.set("n", "<leader>e", ":NvimTreeFocus<CR>")
-
--- telescope
-keymap.set("n", "<leader>ko", "<cmd>Telescope find_files<cr>")
-keymap.set("n", "<leader>kf", "<cmd>Telescope live_grep<cr>")
-keymap.set("n", "<leader>kc", "<cmd>Telescope grep_string<cr>")
-keymap.set("n", "<leader>kb", "<cmd>Telescope buffers<cr>")
-
--- harpoon
-keymap.set("n", "<leader>ha", "<cmd>lua require(\"harpoon.mark\").add_file()<cr>")
-keymap.set("n", "<leader>hh", "<cmd>lua require(\"harpoon.ui\").toggle_quick_menu()<cr>")
+keymap.set("n", "<leader>r", ":NvimTreeFindFile<CR>")
 
 -- split windws
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically

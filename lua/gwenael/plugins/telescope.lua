@@ -6,12 +6,11 @@ return {
     "nvim-lua/plenary.nvim",
   },
   config = function()
-    local telescope = require("telescope") 
+    local _telescope = require("telescope") 
     local actions = require("telescope.actions") 
     
-    telescope.load_extension("fzf")
     -- configure telescope
-    telescope.setup({
+    _telescope.setup({
       -- configure custom mappings
       defaults = {
         path_display = { "truncate" },
@@ -24,6 +23,8 @@ return {
         },
       },
     })
+
+    _telescope.load_extension("fzf")
 
     -- set keymaps
     local keymap = vim.keymap

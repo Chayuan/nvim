@@ -24,6 +24,10 @@ return  {
         git = {
           ignore = false,
         },
+        view = {
+          -- this makes the width dynamic based on the longest line
+          width = {},
+        },
         actions = {
           open_file = {
             window_picker = {
